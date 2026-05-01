@@ -309,38 +309,67 @@ body {
 .empty--hidden {
   display: none;
 }
+
+
+
 .footer {
-  margin-top: 2rem;
-  padding: 1.5rem;
+  margin-top: 40px;
+  padding: 24px;
+  background-color: #ffffff; /* 기존 카드 배경색에 맞춤 */
+}
+
+/* 기술명세서 영역: 가로 배치 */
+.footer__specs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.spec-item {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.spec-item strong {
+  display: block;
+  color: #333;
+  margin-bottom: 4px;
   font-size: 0.9rem;
-  color: var(--text-secondary); /* 기존 변수가 있다면 사용 */
-  border-top: 1px solid #eee;
 }
 
-.footer__title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-.footer__list li {
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+/* 하단 연락처 및 카피라이트 */
+.footer__bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
 }
 
 .footer__contact {
-  text-align: center;
-  border-top: 1px solid #f0f0f0;
-  padding-top: 1rem;
+  margin-bottom: 8px;
 }
 
 .footer__contact a {
-  color: #007bff;
-  text-decoration: none;
+  color: #555;
+  text-decoration: underline;
+}
+
+/* 모바일 대응: 화면이 좁아지면 세로로 정렬 */
+@media (max-width: 600px) {
+  .footer__specs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .spec-item {
+    text-align: left;
+  }
+  .spec-item strong {
+    display: inline-block;
+    margin-right: 8px;
+  }
 }
