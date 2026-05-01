@@ -327,6 +327,7 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 20px;
+  text-align:center;
 }
 
 .spec-item {
@@ -357,6 +358,9 @@ body {
   color: #555;
   text-decoration: underline;
 }
+.footer__copyright{
+	text-align:center;
+}
 
 /* 모바일 대응: 화면이 좁아지면 세로로 정렬 */
 @media (max-width: 600px) {
@@ -364,6 +368,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+	text-align:center;
   }
   .spec-item {
     text-align: left;
