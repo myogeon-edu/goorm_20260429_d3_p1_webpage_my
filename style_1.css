@@ -309,38 +309,3 @@ body {
 .empty--hidden {
   display: none;
 }
-.footer {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary); /* 기존 변수가 있다면 사용 */
-  border-top: 1px solid #eee;
-}
-
-.footer__title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-.footer__list li {
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.footer__contact {
-  text-align: center;
-  border-top: 1px solid #f0f0f0;
-  padding-top: 1rem;
-}
-
-.footer__contact a {
-  color: #007bff;
-  text-decoration: none;
-}
